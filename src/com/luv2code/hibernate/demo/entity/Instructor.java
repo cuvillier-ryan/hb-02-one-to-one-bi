@@ -51,13 +51,8 @@ public class Instructor {
 	@JoinColumn(name = "instructor_detail_id")
 	private InstructorDetail instructorDetail;
 
-<<<<<<< HEAD
-	@OneToMany(fetch=FetchType.LAZY, mappedBy = "instructor", cascade = { CascadeType.PERSIST, CascadeType.DETACH, CascadeType.MERGE,
-			CascadeType.REFRESH })
-=======
 	@OneToMany(fetch = FetchType.LAZY, mappedBy = "instructor", cascade = { CascadeType.PERSIST, CascadeType.DETACH,
 			CascadeType.MERGE, CascadeType.REFRESH })
->>>>>>> 6293b04 (adding Review and updated Objects)
 	private List<Course> courses;
 
 	public Instructor() {
